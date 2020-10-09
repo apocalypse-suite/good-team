@@ -1,0 +1,23 @@
+
+nav {
+  font-family: Segoe UI, sans-serif;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  background-color: #f0f0f0;
+  ul {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    li {
+      padding-left: 10px;
+      cursor: pointer;
+      &:hover,
+      &:active{
+        color: dodgerblue;
+      }
+    }
+  }
+}
