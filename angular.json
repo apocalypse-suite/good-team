@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "good-team-project"
+    }
+  },
+  "defaultProject": "good-team-project",
+  "cli": {
+    "analytics": "2f83c274-9505-4fb9-9c2a-1f64a28763b1"
+  }
 }
