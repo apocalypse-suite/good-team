@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {Router, CanActivate} from '@angular/router';
-import {IUser} from '../types/user';
 
 @Injectable()
 export class AuthGuardService implements CanActivate {
@@ -8,12 +7,11 @@ export class AuthGuardService implements CanActivate {
   }
 
   canActivate(): boolean {
-    const user: IUser = JSON.parse(localStorage.getItem('user'));
-
-    if ('role' in user) {
-      this.router.navigate(['home']);
-    } else {
+    if (!localStorage.getItem('user')) {
+      this.router.navigate(['login']);
       return false;
     }
+
+    return true;
   }
 }
