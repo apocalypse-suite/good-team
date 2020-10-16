@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box;
+}
 nav {
   font-family: Segoe UI, sans-serif;
   height: 100%;
@@ -14,9 +16,13 @@ nav {
     li {
       padding-left: 10px;
       cursor: pointer;
-      &:hover,
-      &:active{
-        color: dodgerblue;
+      &:hover{
+        color: #005cb3;
+        border-left: 1px solid #005cb3;
+      }
+      .material-icons{
+        font-size: 22px;
+       vertical-align: bottom;
       }
     }
   }
