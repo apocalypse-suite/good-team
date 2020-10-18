@@ -15,11 +15,12 @@
 	<form [formGroup]="registerForm" (submit)="submit()">
 		<div class="form-group">
 			
-			<!-- <app-input 
-				formControlName="email" 
-				[ngClass]="{'is-invalid' : submitted && f.email.errors}"
-				[placeholder]="'Email'">
+			<!-- <app-input
+				[controlName]="'email'"
+				[placeholder]="'Email'"
+				[ngClass]="{'is-invalid' : submitted && f.email.errors}"> 
 			</app-input>  -->
+
 			<label>Email Address</label>
 			<input type="text" formControlName="email" [ngClass]="{'is-invalid' : submitted && f.email.errors}">
 			
@@ -32,9 +33,9 @@
 
 		<div class="form-group">
 			<!-- <app-input 
-				formControlName="password"
-				[ngClass]="{'is-invalid' : submitted && f.password.errors}"
-				[placeholder]="'Password'">
+				[controlName]="'password'"
+				[placeholder]="'Password'"
+				[ngClass]="{'is-invalid' : submitted && f.password.errors}">
 			</app-input> -->
 			
 							<label>Password</label>
