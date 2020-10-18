@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<nav>
+  <ul>
+    <li routerLink="/"><span class="material-icons">home</span>Home</li>
+    <li routerLink="/users"><span class="material-icons">person</span>Users</li>
+    <li routerLink="/todos"><span class="material-icons">add_task</span> Todos</li>
+    <li routerLink="/logOut"><span class="material-icons">exit_to_app</span>Logout</li>
+  </ul>
+</nav>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
