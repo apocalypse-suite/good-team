@@ -10,6 +10,7 @@ import {HomeComponent} from './components/pages/home/home.component';
 import {ProfileComponent} from './components/pages/profile/profile.component';
 import {AuthGuardService} from './guards/auth.guard';
 import {ButtonComponent} from './components/button/button.component';
+import { StartPageComponent } from './components/pages/start-page/start-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ButtonComponent} from './components/button/button.component';
     LoginComponent,
     HomeComponent,
     ProfileComponent,
-    ButtonComponent
+    ButtonComponent,
+    StartPageComponent
   ],
   imports: [
     BrowserModule,
