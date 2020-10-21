@@ -11,6 +11,7 @@ import {ProfileComponent} from './components/pages/profile/profile.component';
 import {AuthGuardService} from './guards/auth.guard';
 import {ButtonComponent} from './components/button/button.component';
 import { StartPageComponent } from './components/pages/start-page/start-page.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { StartPageComponent } from './components/pages/start-page/start-page.com
     LoginComponent,
     HomeComponent,
     ProfileComponent,
+    NotFoundComponent,
     ButtonComponent,
     StartPageComponent
   ],
