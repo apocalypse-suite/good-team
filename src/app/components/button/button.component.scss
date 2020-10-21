@@ -1,20 +1,17 @@
 @import "../../../assets/scss/variables";
 
-.example_c {
-  color: #494949 !important;
-  text-transform: uppercase;
+.button {
+  background-color: #252b37;
+  color: #fff;
+  font-size: 1.2em;
   text-decoration: none;
-  background: #ffffff;
-  padding: 5px;
-  border: 1.5px solid #494949 !important;
-  border-radius: 5px;
-  display: inline-block;
-  transition: all 0.4s ease 0s;
+  border: 1px solid #efefef;
+  padding: .5em;
+  border-radius: 3px;
+  transition: all .3s linear;
 }
 
-.example_c:hover {
-  color: #ffffff !important;
-  background: $gold;
-  border-color: $gold;
-  transition: all 0.4s ease 0s;
+.button:hover {
+  color: #ffc518;
+  cursor: pointer;
 }

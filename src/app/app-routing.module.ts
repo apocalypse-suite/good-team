@@ -4,6 +4,7 @@ import {HomeComponent} from './components/pages/home/home.component';
 import {AuthGuardService} from './guards/auth.guard';
 import {LoginComponent} from './components/pages/login/login.component';
 import {ProfileComponent} from './components/pages/profile/profile.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +17,11 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: 'not-found',
+    component: NotFoundComponent,
+  },
+  { path: '**', redirectTo: 'not-found' }
 ];
 
 @NgModule({
