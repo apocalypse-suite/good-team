@@ -10,8 +10,8 @@ import {HomeComponent} from './components/pages/home/home.component';
 import {ProfileComponent} from './components/pages/profile/profile.component';
 import {AuthGuardService} from './guards/auth.guard';
 import {ButtonComponent} from './components/button/button.component';
-import { StartPageComponent } from './components/pages/start-page/start-page.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
+import {StartPageComponent} from './components/pages/start-page/start-page.component';
+import {NotFoundComponent} from './components/pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
