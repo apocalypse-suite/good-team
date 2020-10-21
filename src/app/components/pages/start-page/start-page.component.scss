@@ -1,48 +1,55 @@
-.main{
+.main {
   height: 400px;
   width: 80%;
-  margin-left: 150px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
-.wrapper{
 
-height: 160px;
+h1{
+  margin: auto;
+  width: 75%;
+  font-size: 70px;
+  padding: 55px 40px;
+}
+
+.wrapper {
+  height: 160px;
   width: 40%;
   margin: 20px;
   background-color: black;
   color: white;
   cursor: pointer;
 
-.content{
-  margin-top: 60px;
-  margin-left: 20px;
-  display: flex;
+  .content {
+    margin-top: 60px;
+    margin-left: 20px;
+    display: flex;
 
-font-size: 18px;
+    font-size: 18px;
 
-}
-  &:hover{
+  }
+
+  &:hover {
     background-color: #c5a84e;
     transition: .5s;
     transform: scale(1.1);
-   .material-icons{
-     color: white;
-     transition: .5s;
-   }
+
+    .material-icons {
+      color: white;
+      transition: .5s;
+    }
   }
 
 }
 
-.material-icons{
+.material-icons {
   color: #c5a84e;
   margin-right: 15px;
-
-
 }
-.buttons{
-position: fixed;
+
+.buttons {
+  position: fixed;
   right: 0;
   height: 30px;
   width: 200px;
@@ -51,11 +58,12 @@ position: fixed;
   justify-content: flex-end;
 
 
-  button{
-background-color: white;
+  button {
+    background-color: white;
     border: 0px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       color: #c5a84e;
     }
   }
