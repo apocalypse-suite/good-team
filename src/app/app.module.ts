@@ -9,7 +9,7 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import {AuthGuardService} from './guards/auth.guard';
-import {InputComponent} from './components/input/input.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import {InputComponent} from './components/input/input.component';
     LoginComponent,
     HomeComponent,
     ProfileComponent,
-    InputComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
