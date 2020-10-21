@@ -8,8 +8,8 @@ nav {
   width: 100px;
   position: fixed;
   z-index: 1;
-  background-color: #f0f0f0;
-
+  background-color: black;
+  color: white;
   ul {
     height: 50%;
     display: flex;
@@ -22,7 +22,8 @@ nav {
 
       &:hover {
         color: #c5a84e;
-        border-left: 1px solid #c5a84e;
+        border-left: 3px solid #c5a84e;
+
       }
 
       span .material-icons {
@@ -33,3 +34,4 @@ nav {
     }
   }
 }
+
