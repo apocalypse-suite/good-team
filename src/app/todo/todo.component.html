@@ -1,0 +1,21 @@
+<!--<p>todo works!</p>-->
+
+
+<table>
+  <tbody>
+  <tr *ngFor="let todo of todos; let i=index;">
+
+    <td style="width: 3%">
+      <img style="margin-left: 15px" src="https://img.icons8.com/ios-filled/24/000000/menu-2.png" />
+      <img style="margin-left: -15px" src="https://img.icons8.com/ios-filled/24/000000/menu-2.png" />
+      <input type="checkbox" [checked]="todo.status" (change)="changeStatus(i)"></td>
+    <td style="width: 28%">
+      <span [ngClass]="{'checked': this.todos[i].status === true}"><b>{{ todo.firstSentence }}</b></span>
+      <br>
+      <span [ngClass]="{'checked': this.todos[i].status === true}">{{ todo.secondSentence }}</span>
+    </td>
+    <td style="width: 5%"></td>
+
+  </tr>
+  </tbody>
+</table>
