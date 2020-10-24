@@ -12,6 +12,8 @@ import {AuthGuardService} from './guards/auth.guard';
 import {ButtonComponent} from './components/button/button.component';
 import {StartPageComponent} from './components/pages/start-page/start-page.component';
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
+import { TodoComponent } from './todo/todo.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {NotFoundComponent} from './components/pages/not-found/not-found.componen
     ProfileComponent,
     NotFoundComponent,
     ButtonComponent,
-    StartPageComponent
+    StartPageComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

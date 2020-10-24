@@ -1,0 +1,33 @@
+table {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+tbody {
+  border: 1px solid black;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td {
+  border: 1px solid black;
+  display: table-cell;
+  vertical-align: inherit;
+  padding: 10px;
+  /*    height: 50px;*/
+}
+
+input {
+  float: right;
+  margin-right: 30px;
+  margin-top: 7px;
+}
+.checked{
+  text-decoration: line-through;
+}
