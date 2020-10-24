@@ -5,3 +5,30 @@
     [route]="'/'">
   </app-button>
 </div>
+
+<table>
+  <thead>
+  <tr>
+    <td colspan="2" class="left">Name & Location</td>
+    <td>Skills</td>
+    <td>Price</td>
+    <td>Hour</td>
+    <td class="right">Score</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td style="padding-right: 0" class="left">
+      <img src="{{ user.imageUrl }}" alt="">
+    </td>
+    <td nowrap style="padding-left: 0">
+      <span class="bold">{{ user.user.name }}</span>
+      <br> {{ user.user.location }}
+    </td>
+    <td class="blue">{{ user.skills.join(', ') }}</td>
+    <td class="blue bold">{{ user.price }}</td>
+    <td>{{ user.hour }}</td>
+    <td class="bold right">{{ user.score }}</td>
+  </tr>
+  </tbody>
+</table>

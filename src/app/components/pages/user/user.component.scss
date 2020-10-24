@@ -6,3 +6,54 @@ div{
   justify-content: space-between;
   align-items: center;
 }
+
+table {
+  width: 80%;
+  margin: 20px auto 0;
+  display: table;
+  font-size: 14px;
+  text-align: left;
+  border-collapse: collapse;
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  //border: 2px solid #f2f2f2;
+  //border-radius: 4px;
+  //box-shadow: 0 0 0 2px #f2f2f2;
+}
+
+td {
+  height: 70px;
+  padding: 10px;
+  //border-radius: 4px;
+  //border-top: 2px solid #f2f2f2;
+}
+
+table thead td {
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+table tbody td {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.left {
+  padding-left: 30px;
+}
+
+.right {
+  padding-right: 30px;
+}
+
+img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.blue {
+  color: #539cfa;
+}
+
+.bold {
+  font-weight: bold;
+}
