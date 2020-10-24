@@ -5,6 +5,7 @@ import {AuthGuardService} from './guards/auth.guard';
 import {LoginComponent} from './components/pages/login/login.component';
 import {ProfileComponent} from './components/pages/profile/profile.component';
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
+import {TodoComponent} from './components/pages/todo/todo.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'todos',
+    component: TodoComponent
   },
   {
     path: 'not-found',
