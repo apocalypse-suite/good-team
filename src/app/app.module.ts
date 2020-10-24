@@ -13,6 +13,7 @@ import {ButtonComponent} from './components/button/button.component';
 import {StartPageComponent} from './components/pages/start-page/start-page.component';
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
 import { TodoComponent } from './components/pages/todo/todo.component';
+import { UserComponent } from './components/pages/user/user.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { TodoComponent } from './components/pages/todo/todo.component';
     NotFoundComponent,
     ButtonComponent,
     StartPageComponent,
-    TodoComponent
+    TodoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
