@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     if (this.registerForm.invalid) return;
 
     localStorage.setItem('user', JSON.stringify({name: 'andrii', role: 'user'}));
-    this.router.navigate(['profile']);
+    this.router.navigate(['']);
   }
 
 }

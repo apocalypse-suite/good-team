@@ -9,11 +9,11 @@ import {TodoComponent} from './components/pages/todo/todo.component';
 import {UserComponent} from './components/pages/user/user.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {path: '', canActivate: [AuthGuardService], component: HomeComponent},
   {
     path: 'profile',
-    component: ProfileComponent,
     canActivate: [AuthGuardService],
+    component: ProfileComponent,
   },
   {
     path: 'login',
@@ -21,17 +21,19 @@ const routes: Routes = [
   },
   {
     path: 'users',
+    canActivate: [AuthGuardService],
     component: UserComponent
   },
   {
     path: 'todos',
+    canActivate: [AuthGuardService],
     component: TodoComponent
   },
   {
     path: 'not-found',
     component: NotFoundComponent,
   },
-  { path: '**', redirectTo: 'not-found' }
+  {path: '**', redirectTo: 'not-found'}
 ];
 
 @NgModule({
