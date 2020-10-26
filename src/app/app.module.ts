@@ -14,6 +14,7 @@ import {StartPageComponent} from './components/pages/start-page/start-page.compo
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
 import { TodoComponent } from './components/pages/todo/todo.component';
 import { UserComponent } from './components/pages/user/user.component';
+import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { UserComponent } from './components/pages/user/user.component';
     ButtonComponent,
     StartPageComponent,
     TodoComponent,
-    UserComponent
+    UserComponent,
+    TutorialsComponent
   ],
   imports: [
     BrowserModule,

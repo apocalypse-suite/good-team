@@ -1,0 +1,17 @@
+<div>
+	<span>Tutorials component</span>
+	<app-button
+			[text]="'Back'"
+			[route]="'/'">
+	</app-button>
+</div>
+
+<!--<center>-->
+	<section>
+		<div *ngFor="let tutorial of tutorials" style="border: 1px solid black; padding: 10px; margin-bottom: 10px">
+			<span>Title: {{ tutorial['title'] }}</span><br>
+			<span>Description: {{ tutorial['description'] }}</span><br>
+			<span>Published: <input type="checkbox" [checked]="tutorial['published']"></span>
+		</div>
+	</section>
+<!--</center>-->

@@ -7,6 +7,7 @@ import {ProfileComponent} from './components/pages/profile/profile.component';
 import {NotFoundComponent} from './components/pages/not-found/not-found.component';
 import {TodoComponent} from './components/pages/todo/todo.component';
 import {UserComponent} from './components/pages/user/user.component';
+import {TutorialsComponent} from './components/pages/tutorials/tutorials.component';
 
 const routes: Routes = [
   {path: '', canActivate: [AuthGuardService], component: HomeComponent},
@@ -23,6 +24,11 @@ const routes: Routes = [
     path: 'users',
     canActivate: [AuthGuardService],
     component: UserComponent
+  },
+  {
+    path: 'tutorials',
+    canActivate: [AuthGuardService],
+    component: TutorialsComponent
   },
   {
     path: 'todos',
